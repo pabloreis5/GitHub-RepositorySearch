@@ -3,7 +3,7 @@
 ![logo](https://github.com/pabloreis5/GitHub-RepositorySearch/blob/main/app/src/main/res/drawable/repositorysearch.png)
 
 ## Description
-Consumindo API do GitHub para busca de repositórios com base no número de estrelas, em ordem descrescente.
+Consumindo API do GitHub para busca de repositórios com base no número de estrelas, em ordem decrescente.
 Tendo como objetivo no desenvolvimento desse projeto a evolução de conhecimentos relacionados principalmente ao consumo de API's.
 
 ## Demo
