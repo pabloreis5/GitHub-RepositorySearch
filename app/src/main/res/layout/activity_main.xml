@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:src="@drawable/repositorysearch" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/requestTag"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_bg"
+            android:elevation="8dp"
+            android:hint="Type a Query for GitHub !"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/search_repo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:contentDescription="@string/app_name"
+            android:onClick="searchRepo"
+            android:padding="10dp"
+            android:src="@drawable/search_icon"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dataListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear"
+        android:background="@drawable/listview_bg" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Repository found."
+        android:visibility="invisible" />
+    <ProgressBar
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:id="@+id/loadingBar"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
