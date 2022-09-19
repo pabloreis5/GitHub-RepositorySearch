@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     return;
                 }
                 loadingBar.setVisibility(View.VISIBLE);
+                errorMessage.setVisibility(View.INVISIBLE);
                 if(mRepositoryList != null){
                     deliverResult(mRepositoryList);
                 }else{
