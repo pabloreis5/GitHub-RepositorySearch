@@ -9,3 +9,10 @@ Tendo como objetivo no desenvolvimento desse projeto a evolução de conheciment
 ## Demo
 <img src="https://github.com/pabloreis5/GitHub-RepositorySearch/blob/main/demo.gif" width="300" height="570"/>
 
+## Language and Tools
+![android](https://github.com/vorillaz/devicons/blob/master/!SVG/android.svg)
+![java](https://github.com/vorillaz/devicons/blob/master/!SVG/java.svg)
+
+## 
+Development by Pablo Batista.
+
